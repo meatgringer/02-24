@@ -232,7 +232,8 @@ body {
     }
 
     .converter-row {
-        gap: 10px;
+        gap: 1px;
+        font-size: 7px;
     }
 
     .swap-btn {
@@ -299,14 +300,6 @@ body {
         font-size: 18px;
         padding: 15px;
     }
-
-    #currency-result,
-    #temp-result {
-        font-size: 14px;
-        white-space: normal;
-        word-break: break-all;
-    }
-
 }
 
 
