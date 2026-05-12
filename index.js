@@ -1,5 +1,3 @@
-// ==================== УТИЛИТЫ ====================
-
 function formatNumber(num, decimals = 3) {
     return num.toFixed(decimals).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 }
@@ -8,7 +6,6 @@ function formatNUM(num, decimals = 0) {
     return num.toFixed(decimals).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 }
 
-// ==================== ПЕРЕКЛЮЧЕНИЕ ВКЛАДОК ====================
 
 function switchTab(tabName) {
     document.querySelectorAll('.tab-content').forEach(tab => {
@@ -38,7 +35,7 @@ function recalculateCurrentTab(tabName) {
             convertCurrency();
             break;
         case 'translator':
-            translateText(); // Исправлено: было convertDistance()
+            translateText();
             break;
         case 'temperature':
             convertTemperature();
@@ -56,7 +53,6 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     });
 });
 
-// ==================== 1. КОНВЕРТЕР ВАЛЮТ ====================
 
 const exchangeRates = {
     RUB: 1,
@@ -107,7 +103,6 @@ function swapCurrencies() {
     convertCurrency();
 }
 
-// ==================== ПЕРЕВОДЧИК ====================
 
 const languageNames = {
     ru: 'Русский',
@@ -180,7 +175,6 @@ function swapTranslateLanguages() {
     translateText();
 }
 
-// ==================== 2. КОНВЕРТЕР ТЕМПЕРАТУРЫ ====================
 
 function convertTemperature() {
     const tempInput = document.getElementById('temp-value');
@@ -212,7 +206,6 @@ function swapTemperature() {
     convertTemperature();
 }
 
-// ==================== 3. КАЛЬКУЛЯТОР ЧАЕВЫХ ====================
 
 function calculateTips() {
     const billInput = document.getElementById('bill-amount');
@@ -224,9 +217,8 @@ function calculateTips() {
     const people = parseInt(peopleCount) || 1;
     const percent = parseFloat(tipPercent);
     
-    // Считаем скидку (вычитаем, а не прибавляем)
     const discountAmount = bill * (percent / 100);
-    const totalBill = bill - discountAmount;  // ← МИНУС для скидки
+    const totalBill = bill - discountAmount;
     const perPerson = totalBill / people;
     
     resultDiv.innerHTML = `
@@ -236,7 +228,7 @@ function calculateTips() {
     `;
 }
 
-// ==================== ОБРАБОТЧИКИ СОБЫТИЙ ====================
+
 
 document.getElementById('currency-amount').addEventListener('input', convertCurrency);
 document.getElementById('from-currency').addEventListener('change', convertCurrency);
@@ -256,7 +248,6 @@ document.getElementById('bill-amount').addEventListener('input', calculateTips);
 document.getElementById('tip-percent').addEventListener('change', calculateTips);
 document.getElementById('people-count').addEventListener('input', calculateTips);
 
-// ==================== ИНИЦИАЛИЗАЦИЯ ====================
 
 convertCurrency();
 translateText();
