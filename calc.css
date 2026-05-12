@@ -12,7 +12,7 @@
     --transition: 0.3s ease;
 }
 
-/* ============ БАЗОВЫЕ СТИЛИ ============ */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #d9ddf0 0%, #bfd7ee 100%);
@@ -25,7 +25,7 @@ body {
 }
 
 
-/* ============ ЗАГОЛОВОК ============ */
+
 .calc-header {
     text-align: center;
     margin-bottom: 25px;
@@ -33,8 +33,6 @@ body {
 
 
 
-
-/* ============ ВКЛАДКИ ============ */
 .tabs {
     display: flex;
     gap: 8px;
@@ -71,7 +69,7 @@ body {
     box-shadow: var(--shadow);
 }
 
-/* ============ КОНТЕНТ ВКЛАДОК ============ */
+
 .tab-content {
     display: none;
     animation: fadeSlideIn 0.3s ease;
@@ -92,7 +90,7 @@ body {
     }
 }
 
-/* ============ ФОРМЫ ============ */
+
 .form-group {
     margin-bottom: 15px;
 }
@@ -133,7 +131,7 @@ body {
     background: white;
 }
 
-/* ============ РЯД КОНВЕРТЕРА ============ */
+
 .converter-row {
     display: flex;
     gap: 12px;
@@ -144,7 +142,7 @@ body {
     flex: 1;
 }
 
-/* ============ КНОПКА ОБМЕНА ============ */
+
 .swap-btn {
     display: flex;
     align-items: center;
@@ -171,7 +169,7 @@ body {
     box-shadow: var(--shadow);
 }
 
-/* ============ БЛОК РЕЗУЛЬТАТА ============ */
+
 .result-box {
     background: linear-gradient(135deg, #afb7e2 0%, #82a6c9 100%);
     color: white;
@@ -199,7 +197,7 @@ body {
     display: block;
 }
 
-/* ============ ИНФОРМАЦИОННАЯ ЗАМЕТКА ============ */
+
 .info-note {
     font-size: 11px;
     color: var(--text);
@@ -207,7 +205,7 @@ body {
     margin-top: 10px;
 }
 
-/* ============ АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ ============ */
+
 @media (max-width: 480px) {
     body {
         padding: 10px;
@@ -226,9 +224,14 @@ body {
         flex-wrap: wrap;
     }
 
+    @media (max-width: 480px) {
     .tab-btn {
         font-size: 11px;
         padding: 10px 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+    }
     }
 
     .converter-row {
@@ -255,7 +258,6 @@ body {
 
 
 
-/* ============ ПОДВАЛ (FOOTER) ============ */
 .footer {
     margin-top: 25px;
     padding-top: 20px;
@@ -297,7 +299,6 @@ body {
 
 
 
-/* ============ ПЕРЕВОДЧИК ============ */
 .translator-block {
     margin-top: 25px;
     padding-top: 20px;
