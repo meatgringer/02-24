@@ -232,8 +232,8 @@ body {
     }
 
     .converter-row {
-        gap: 1px;
-        font-size: 7px;
+        gap: 10px;
+        font-size: 4px;
     }
 
     .swap-btn {
