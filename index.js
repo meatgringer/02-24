@@ -76,7 +76,7 @@ const currencySymbols = {
 
 function formatCurrency(amount, currency) {
     const symbol = currencySymbols[currency] || '';
-    return `${symbol} ${formatNumber(amount)}`;
+    return `${symbol}${amount.toFixed(2)}`;
 }
 
 function convertCurrency() {
