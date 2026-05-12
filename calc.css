@@ -299,6 +299,14 @@ body {
         font-size: 18px;
         padding: 15px;
     }
+
+    #currency-result,
+    #temp-result {
+        font-size: 14px;
+        white-space: normal;
+        word-break: break-all;
+    }
+
 }
 
 
