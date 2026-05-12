@@ -76,7 +76,7 @@ const currencySymbols = {
 
 function formatCurrency(amount, currency) {
     const symbol = currencySymbols[currency] || '';
-    return `${symbol}${amount.toFixed(2)}`;
+    return `${symbol} ${formatNumber(amount)}`;
 }
 
 function convertCurrency() {
@@ -218,7 +218,7 @@ function calculateTips() {
     const percent = parseFloat(tipPercent);
     
     const discountAmount = bill * (percent / 100);
-    const totalBill = bill - discountAmount;
+    const totalBill = bill - discountAmount; 
     const perPerson = totalBill / people;
     
     resultDiv.innerHTML = `
