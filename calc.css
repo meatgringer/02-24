@@ -113,7 +113,7 @@ body {
     font-family: inherit;
     transition: border-color var(--transition), box-shadow var(--transition);
     background: #fafafa;
-    color: var(--text);
+    color: red;
     -moz-appearance: textfield;
 }
 
