@@ -243,6 +243,8 @@ body {
     #tab-currency .converter-row {
         flex-direction: column;
         gap: 0;
+        font-size: 50px;
+        text-size: 50px;
     }
     
     #tab-currency .swap-btn {
@@ -285,6 +287,8 @@ body {
     #tab-temperature .converter-row {
         flex-direction: column;
         gap: 0;
+        font-size: 50px;
+        text-size: 50px;
     }
     
     #tab-temperature .swap-btn {
