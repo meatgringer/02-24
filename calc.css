@@ -242,7 +242,7 @@ body {
 
     #tab-currency .converter-row {
         flex-direction: column;
-        gap: 5px;
+        gap: 0px;
     }
     
     #tab-currency .swap-btn {
@@ -272,7 +272,7 @@ body {
     #tab-translator .swap-btn {
         width: 36px;
         height: 36px;
-        font-size: 33px;
+        font-size: 13px;
         flex-shrink: 0;
         margin: 0;
         transform: none;
