@@ -114,7 +114,7 @@ body {
     transition: border-color var(--transition), box-shadow var(--transition);
     background: #fafafa;
     color: var(--text);
-    -moz-appearance: textfield;
+    --moz-appearance: textfield;
 }
 
 .form-group input[type="number"]::-webkit-outer-spin-button,
