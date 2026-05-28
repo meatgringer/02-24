@@ -120,17 +120,21 @@ const quickPhrases = {
     'спасибо': { en: 'thanks', de: 'danke', fr: 'merci'},
     'извините': { en: 'excuse me', de: 'verzeihen sie', fr: 'excusez-moi'},
     'помогите': { en: 'help', de: 'Hilfe', fr: 'aide'},
-    'где': { en: 'where is', de: 'wo ist', fr: 'où est'},
-    'как': { en: 'how to', de: 'wie', fr: 'comment'}, 
     'да': { en: 'yes', de: 'ja', fr: 'oui'},
     'нет': { en: 'no', de: 'nein', fr: 'non'},
+
+    'где': { en: 'where is', de: 'wo ist', fr: 'où est'},
+    'как': { en: 'how to', de: 'wie', fr: 'comment'},
     'и': { en: 'and', de: 'und', fr: 'et'},
     'тут': { en: 'here', de: 'hier', fr: 'ici'},
     'вы': { en: 'you', de: 'du', fr: 'toi'},
     'ты': { en: 'you', de: 'du', fr: 'toi'},
     'я': { en: 'I', de: 'ich', fr: 'je'},
-    'к': { en: '', de: '', fr: 'je'},
-    
+    'к': { en: '', de: '', fr: ''},
+    'на': { en: '', de: '', fr: ''},
+    'до': { en: '', de: '', fr: ''},
+    'в': { en: '', de: '', fr: ''},
+
     'ресторан': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
     'ресторана': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
     'ресторану': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
@@ -154,14 +158,15 @@ const quickPhrases = {
     'вокзала': { en: 'train station', de: 'bahnhof', fr: 'gare'},
     
     'как дела': { en: 'how are you', de: 'wie geht es dir', fr: 'comment vas-tu'},
-    'как твои дела': { en: 'how are you', de: 'wie geht es dir', fr: 'comment vas-tu'},
+    'как твои дела': { en: 'how are you', de: 'wie geht es dir', fr: 'comment vas-tu'},
     'добраться': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
-    'добраться до': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
-    'попасть': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
-    'попасть в': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
+    'попасть': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
     'пройти': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
-    'пройти в': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
-};
+    'ближайший': { en: '', de: '', fr: ''},
+    'ближайшая': { en: '', de: '', fr: ''},
+    'находится': { en: '', de: '', fr: ''},
+    'поблизости': { en: '', de: '', fr: ''},
+    
 
 function translateText() {
     const text = document.getElementById('translate-text').value.toLowerCase().trim();
