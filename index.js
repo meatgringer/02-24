@@ -115,7 +115,7 @@ const languageNames = {
 
 const quickPhrases = {
     'привет': { en: 'hello', de: 'hallo', fr: 'bonjour'},
-    'добрый день': { en: 'hello', de: 'hallo', fr: 'bonjour'},
+    'здраствуйте': { en: 'hello', de: 'hallo', fr: 'bonjour'},
     'здрасте': { en: 'hello', de: 'hallo', fr: 'bonjour'},
     'спасибо': { en: 'thanks', de: 'danke', fr: 'merci'},
     'извините': { en: 'excuse me', de: 'verzeihen sie', fr: 'excusez-moi'},
@@ -130,30 +130,37 @@ const quickPhrases = {
     'ты': { en: 'you', de: 'du', fr: 'toi'},
     'я': { en: 'I', de: 'ich', fr: 'je'},
     'к': { en: '', de: '', fr: 'je'},
-    'в': { en: '', de: '', fr: 'je'},
-    'до': { en: '', de: '', fr: 'je'},
     
     'ресторан': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
     'ресторана': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
+    'ресторану': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
     'кафе': { en: 'cafe', de: 'cafe', fr: 'café' },
     'туалет': { en: 'toilet', de: 'toilette', fr: 'toilettes'},
+    'туалету': { en: 'toilet', de: 'toilette', fr: 'toilettes'},
     'уборная': { en: 'toilet', de: 'toilette', fr: 'toilettes'},
     'уборной': { en: 'toilet', de: 'toilette', fr: 'toilettes'},
     'туалета': { en: 'toilet', de: 'toilette', fr: 'toilettes'},
     'выход': { en: 'exit', de: 'ausfahrt', fr: 'sortie'},
+    'выхода': { en: 'exit', de: 'ausfahrt', fr: 'sortie'},
     'выходу': { en: 'exit', de: 'ausfahrt', fr: 'sortie'},
     'вход': { en: 'entrance', de: 'eingang', fr: 'entrée'},
+    'входа': { en: 'entrance', de: 'eingang', fr: 'entrée'},
     'входу': { en: 'entrance', de: 'eingang', fr: 'entrée'},
     'аэропорт': { en: 'airport', de: 'flughafen', fr: 'aéroport'},
     'аэропорту': { en: 'airport', de: 'flughafen', fr: 'aéroport'},
+    'аэропорта': { en: 'airport', de: 'flughafen', fr: 'aéroport'},
     'вокзал': { en: 'train station', de: 'bahnhof', fr: 'gare'},
     'вокзалу': { en: 'train station', de: 'bahnhof', fr: 'gare'},
+    'вокзала': { en: 'train station', de: 'bahnhof', fr: 'gare'},
     
     'как дела': { en: 'how are you', de: 'wie geht es dir', fr: 'comment vas-tu'},
+    'как твои дела': { en: 'how are you', de: 'wie geht es dir', fr: 'comment vas-tu'},
     'добраться': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
     'добраться до': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
     'попасть': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
+    'попасть в': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
     'пройти': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
+    'пройти в': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
 };
 
 function translateText() {
