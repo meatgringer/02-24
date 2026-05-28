@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TravelCalc</title>
     <link rel="stylesheet" href="calc.css">
+    <link rel="icon" type="image/png" href="air.png">
 </head>
 <body>
 
@@ -16,6 +17,7 @@
         </header>
 
 
+
         <nav class="tabs">
             <button class="tab-btn active" data-tab="currency">Валюта</button>
             <button class="tab-btn" data-tab="translator">Переводчик</button>
@@ -25,24 +27,24 @@
 
         <section class="tab-content active" id="tab-currency">
             <div class="form-group">
-                <label for="currency-amount"> Сумма</label>
-                <input type="number" id="currency-amount" min="0" step="0.1" placeholder="Введите сумму...">
+                <label for="text"> Сумма</label>
+                <input type="number" id="text" min="0" step="0.1" placeholder="Введите сумму...">
             </div>
             
             <div class="converter-row">
                 <div class="form-group">
                     <select id="from-currency">
-                        <option value="RUB" selected>RUB - Рубль</option>
+                        <option value="RUB" selected>RUB - Российский рубль</option>
                         <option value="USD">USD - Доллар</option>
                         <option value="EUR">EUR - Евро</option>
-                        <option value="BYN">BYN - Рубль</option>
+                        <option value="BYN">BYN - Белорусский рубль</option>
                         <option value="KZT">KZT - Тенге</option>
                         <option value="CNY">CNY - Юань</option>
                         <option value="THB">THB - Бат</option>
                     </select>
                 </div>
 
-                <button class="swap-btn" id="swap-currencies" title="Поменять валюты местами">⇄</button>
+                <button class="swap-btn" id="swap-currencies" title="поменять валюты местами">⇄</button>
 
                 <div class="form-group">
                     <select id="to-currency">
@@ -64,8 +66,6 @@
 
 
 
-
-
         <section class="tab-content" id="tab-translator">
             <div class="form-group">
         <div class="translator-block">
@@ -73,7 +73,7 @@
             <div class="translator-form">
                 <div class="form-group">
                     <label for="translate-text">Текст для перевода</label>
-                    <textarea id="translate-text" rows="3" placeholder="Введите текст..."></textarea>
+                    <input id="translate-text" step="0.1" placeholder="Введите текст..."></input>
                 </div>
                 
                 <div class="converter-row">
@@ -88,7 +88,7 @@
                         </select>
                     </div>
                     
-                    <button class="swap-btn" onclick="swapTranslateLanguages()" title="Поменять языки">⇄</button>
+                    <button class="swap-btn" onclick="TranslatesLanguages()" title="поменять языки местами">⇄</button>
                     
                     <div class="form-group">
                         <select id="translate-to">
@@ -111,7 +111,6 @@
 
 
 
-
         <section class="tab-content" id="tab-temperature">
             <div class="form-group">
                 <label for="temp-value">Температура</label>
@@ -126,7 +125,7 @@
                     </select>
                 </div>
 
-                <button class="swap-btn" id="swap-temp" title="Поменять шкалы местами">⇄</button>
+                <button class="swap-btn" id="swap-temp" title="поменять шкалы местами">⇄</button>
 
                 <div class="form-group">
                     <select id="temp-to">
@@ -142,10 +141,9 @@
 
 
 
-
         <section class="tab-content" id="tab-tips">
             <div class="form-group">
-                <label for="bill-amount">Сумма</label>
+                <label for="bill-amount">Полная цена</label>
                 <input type="number" id="bill-amount" min="0" step="0.01" placeholder="Введите цену...">
             </div>
 
@@ -169,20 +167,16 @@
 
 
 
-
-
-
-
     <div class="calculator"></div>
-    <br><br><br><br><br><br>
-    <br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
 
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-links">
-                <a href="#" class="footer-link">Политика конфиденциальности</a>
+                <a href="privacy.html" class="footer-link">Политика конфиденциальности</a>
                 <span class="footer-divider">|</span>
-                <a href="#" class="footer-link">Пользовательское соглашение</a>
+                <a href="agreement.html" class="footer-link">Пользовательское соглашение</a>
             </div>
             <div class="footer-copyright">
                 © 2026 meangrinder. Все права защищены
