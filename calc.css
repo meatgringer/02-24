@@ -346,6 +346,7 @@ body {
 #translate-text {
     width: 100%;
     font-size: 16px;
+    font-family: inherit;
     padding: 12px 15px;
     border: 2px solid var(--border-color);
     border-radius: var(--corner);
