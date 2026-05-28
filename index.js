@@ -80,7 +80,7 @@ function formatCurrency(amount, currency) {
 }
 
 function convertCurrency() {
-    const amountInput = document.getElementById('currency-amount');
+    const amountInput = document.getElementById('text');
     const fromCurrency = document.getElementById('from-currency').value;
     const toCurrency = document.getElementById('to-currency').value;
     const resultDiv = document.getElementById('currency-result');
@@ -115,14 +115,28 @@ const languageNames = {
 
 const quickPhrases = {
     'привет': { en: 'hello', de: 'hallo', fr: 'bonjour', zh: '你好', th: 'สวัสดี' },
-    'спасибо': { en: 'thank you', de: 'danke', fr: 'merci', zh: '谢谢', th: 'ขอบคุณ' },
-    'где': { en: 'where is', de: 'wo ist', fr: 'où est', zh: '在哪里', th: 'ที่ไหน' },
-    'туалет': { en: 'toilet', de: 'Toilette', fr: 'toilettes', zh: '厕所', th: 'ห้องน้ำ' },
-    'сколько стоит': { en: 'how much', de: 'wie viel', fr: 'combien', zh: '多少钱', th: 'เท่าไหร่' },
-    'извините': { en: 'pardon me', de: 'verzeihen sie', fr: 'excusez-moi', zh: '对不起', th: 'ประทานโทษ' },
+    'спасибо': { en: 'thanks', de: 'danke', fr: 'merci', zh: '谢谢', th: 'ขอบคุณ' },
+    'извините': { en: 'excuse me', de: 'verzeihen sie', fr: 'excusez-moi', zh: '对不起', th: 'ประทานโทษ' },
     'помогите': { en: 'help', de: 'Hilfe', fr: 'aide', zh: '帮助', th: 'ช่วยด้วย' },
+    'где': { en: 'where is', de: 'wo ist', fr: 'où est', zh: '在哪里', th: 'ที่ไหน' },
+    'как': { en: 'how to', de: 'Wie man', fr: 'comment', zh: '如何', th: 'ยังไง' }, 
     'да': { en: 'yes', de: 'ja', fr: 'oui', zh: '是的', th: 'ใช่' },
     'нет': { en: 'no', de: 'nein', fr: 'non', zh: '不', th: 'ไม่' },
+    'и': { en: 'and', de: '', fr: '', zh: '和', th: 'และ' },
+    'тут': { en: '', de: '', fr: '', zh: '', th: '' },
+    'вы': { en: '', de: '', fr: '', zh: '', th: '' },
+    'я': { en: '', de: '', fr: '', zh: '', th: '' },
+    'ресторан': { en: '', de: '', fr: '', zh: '', th: '' },
+    'кафе': { en: '', de: '', fr: '', zh: '', th: '' },
+    'туалет': { en: 'toilet', de: 'Toilette', fr: 'toilettes', zh: '厕所', th: 'ห้องน้ำ' },
+    'уборная': { en: 'toilet', de: 'Toilette', fr: 'toilettes', zh: '厕所', th: 'ห้องน้ำ' },
+    'выход': { en: '', de: '', fr: '', zh: '', th: '' },
+    'вход': { en: '', de: '', fr: '', zh: '', th: '' },
+    'аэропорт': { en: '', de: '', fr: '', zh: '', th: '' },
+    'вокзал': { en: '', de: '', fr: '', zh: '', th: '' },
+    'как дела': { en: 'how are you', de: '', fr: '', zh: '', th: '' },
+    'добраться': { en: '', de: '', fr: '', zh: '', th: '' },
+    'попасть на': { en: '', de: '', fr: '', zh: '', th: '' },
 };
 
 function translateText() {
@@ -168,7 +182,7 @@ function translateText() {
     resultDiv.innerHTML = translated;
 }
 
-function swapTranslateLanguages() {
+function TranslatesLanguages() {
     const fromSelect = document.getElementById('translate-from');
     const toSelect = document.getElementById('translate-to');
     [fromSelect.value, toSelect.value] = [toSelect.value, fromSelect.value];
@@ -230,7 +244,7 @@ function calculateTips() {
 
 
 
-document.getElementById('currency-amount').addEventListener('input', convertCurrency);
+document.getElementById('text').addEventListener('input', convertCurrency);
 document.getElementById('from-currency').addEventListener('change', convertCurrency);
 document.getElementById('to-currency').addEventListener('change', convertCurrency);
 document.getElementById('swap-currencies').addEventListener('click', swapCurrencies);
