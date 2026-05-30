@@ -130,10 +130,10 @@ const quickPhrases = {
     'вы': { en: 'you', de: 'du', fr: 'toi'},
     'ты': { en: 'you', de: 'du', fr: 'toi'},
     'я': { en: 'I', de: 'ich', fr: 'je'},
-    'к': { en: '', de: '', fr: ''},
-    'на': { en: '', de: '', fr: ''},
-    'до': { en: '', de: '', fr: ''},
-    'в': { en: '', de: '', fr: ''},
+    'к': { en: 'to the', de: 'zum', fr: 'au'},
+    'на': { en: 'on the', de: 'auf', fr: 'sur le'},
+    'до': { en: 'to the', de: 'zur', fr: 'aux'},
+    'в': { en: 'to the', de: 'zur', fr: 'aux'},
 
 
     'ресторан': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
@@ -163,12 +163,13 @@ const quickPhrases = {
 
     'добраться': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
     'попасть': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
-
     'пройти': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
-    'ближайший': { en: '', de: '', fr: ''},
-    'ближайшая': { en: '', de: '', fr: ''},
-    'находится': { en: '', de: '', fr: ''},
-    'поблизости': { en: '', de: '', fr: ''},
+    'ближайший': { en: 'nearest', de: 'das nächstgelegene', fr: 'le plus proche'},
+    'ближайшая': { en: 'nearest', de: 'das nächstgelegene', fr: 'le plus proche'},
+    'поблизости': { en: 'nearby', de: 'in der Nähe', fr: 'à proximité'},
+    'рядом': { en: 'nearby', de: 'in der Nähe', fr: 'à proximité'},
+    'вблизи': { en: 'nearby', de: 'in der Nähe', fr: 'à proximité'},
+    'неподалеку': { en: 'nearby', de: 'in der Nähe', fr: 'à proximité'},
 }
 
 function translateText() {
