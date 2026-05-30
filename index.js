@@ -138,7 +138,6 @@ const quickPhrases = {
     'до': { en: 'to the', de: 'zur', fr: 'aux'},
     'в': { en: 'to the', de: 'zur', fr: 'aux'},
 
-
     'ресторан': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
     'ресторана': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
     'ресторану': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
