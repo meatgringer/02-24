@@ -173,6 +173,7 @@ const quickPhrases = {
     'рядом': { en: 'nearby', de: 'in der Nähe', fr: 'à proximité'},
     'вблизи': { en: 'nearby', de: 'in der Nähe', fr: 'à proximité'},
     'неподалеку': { en: 'nearby', de: 'in der Nähe', fr: 'à proximité'},
+    'находится': { en: 'nearby', de: 'in der Nähe', fr: 'à proximité'},
 }
 
 function translateText() {
