@@ -116,9 +116,12 @@ const languageNames = {
 const quickPhrases = {
     'привет': { en: 'hello', de: 'hallo', fr: 'bonjour'},
     'здраствуйте': { en: 'hello', de: 'hallo', fr: 'bonjour'},
+    'здраствуй': { en: 'hello', de: 'hallo', fr: 'bonjour'},
+    'даров': { en: 'hello', de: 'hallo', fr: 'bonjour'},
     'здрасте': { en: 'hello', de: 'hallo', fr: 'bonjour'},
     'спасибо': { en: 'thanks', de: 'danke', fr: 'merci'},
     'извините': { en: 'excuse me', de: 'verzeihen sie', fr: 'excusez-moi'},
+    'извиняюсь': { en: 'excuse me', de: 'verzeihen sie', fr: 'excusez-moi'},
     'помогите': { en: 'help', de: 'Hilfe', fr: 'aide'},
     'да': { en: 'yes', de: 'ja', fr: 'oui'},
     'нет': { en: 'no', de: 'nein', fr: 'non'},
