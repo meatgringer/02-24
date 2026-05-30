@@ -134,7 +134,8 @@ const quickPhrases = {
     'на': { en: '', de: '', fr: ''},
     'до': { en: '', de: '', fr: ''},
     'в': { en: '', de: '', fr: ''},
-
+
+
     'ресторан': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
     'ресторана': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
     'ресторану': { en: 'restaurant', de: 'restaurant', fr: 'restaurant'},
@@ -158,15 +159,17 @@ const quickPhrases = {
     'вокзала': { en: 'train station', de: 'bahnhof', fr: 'gare'},
     
     'как дела': { en: 'how are you', de: 'wie geht es dir', fr: 'comment vas-tu'},
-    'как твои дела': { en: 'how are you', de: 'wie geht es dir', fr: 'comment vas-tu'},
+    'как твои дела': { en: 'how are you', de: 'wie geht es dir', fr: 'comment vas-tu'},
+
     'добраться': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
-    'попасть': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
+    'попасть': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
+
     'пройти': { en: 'get to the', de: 'gelangen', fr: 'arriver là-bas'},
     'ближайший': { en: '', de: '', fr: ''},
     'ближайшая': { en: '', de: '', fr: ''},
     'находится': { en: '', de: '', fr: ''},
     'поблизости': { en: '', de: '', fr: ''},
-    
+}
 
 function translateText() {
     const text = document.getElementById('translate-text').value.toLowerCase().trim();
