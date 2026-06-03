@@ -278,7 +278,6 @@ body {
         flex-direction: column;
         gap: 0;
         font-size: 50px;
-        text-size: 50px;
     }
     
     #tab-temperature .swap-btn {
