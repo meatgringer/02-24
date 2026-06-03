@@ -17,11 +17,11 @@
         </header>
 
 
-        <nav class="tabs">
-            <button class="tab-btn active" data-tab="currency">Валюта</button>
-            <button class="tab-btn" data-tab="translator">Переводчик</button>
-            <button class="tab-btn" data-tab="temperature">Температура</button>
-            <button class="tab-btn" data-tab="tips">Счетчик</button>
+        <nav class="tabs">  <!-- блок -->
+            <button class="tab-btn active" data-tab="currency">Валюта</button> <!-- 1 подблок -->
+            <button class="tab-btn" data-tab="translator">Переводчик</button> <!-- 2 подблок -->
+            <button class="tab-btn" data-tab="temperature">Температура</button> <!-- 3 подблок -->
+            <button class="tab-btn" data-tab="tips">Счетчик</button> <!-- 4 подблок -->
         </nav>
 
         <section class="tab-content active" id="tab-currency">
@@ -30,10 +30,10 @@
                 <input type="number" id="text" min="0" step="0.1" placeholder="Введите сумму...">
             </div>
             
-            <div class="converter-row">
+            <div class="converter-row"> 
                 <div class="form-group">
-                    <select id="from-currency">
-                        <option value="RUB" selected>RUB - Российский рубль</option>
+                    <select id="from-currency"> <!-- выбор валюты -->
+                        <option value="RUB" selected>RUB - Российский рубль</option> <!-- selected - выбрать отображаемую валюту в первую очередь -->
                         <option value="USD">USD - Доллар</option>
                         <option value="EUR">EUR - Евро</option>
                         <option value="BYN">BYN - Белорусский рубль</option>
@@ -43,10 +43,10 @@
                     </select>
                 </div>
 
-                <button class="swap-btn" id="swap-currencies" title="поменять валюты местами">⇄</button>
+                <button class="swap-btn" id="swap-currencies" title="поменять валюты местами">⇄</button> 
 
                 <div class="form-group">
-                    <select id="to-currency">
+                    <select id="to-currency"> <!-- 2 выбор валюты -->
                         <option value="RUB">RUB - Российский рубль</option>
                         <option value="USD" selected>USD - Доллар</option>
                         <option value="EUR">EUR - Евро</option>
@@ -60,14 +60,14 @@
 
 
             <div class="result-box" id="currency-result"> ? </div>
-            <p class="info-note">! update: 11.05.2026 !</p>
+            <p class="info-note">! update: 11.05.2026 !</p> <!-- дата ручного обновления валюты -->
         </section>
 
 
 
         <section class="tab-content" id="tab-translator">
             <div class="form-group">
-        <div class="translator-block">
+        <div class="translator-block"> <!-- расположение нижнего блока -->
             
             <div class="translator-form">
                 <div class="form-group">
@@ -78,30 +78,26 @@
                 <div class="converter-row">
                     <div class="form-group">
                         <select id="translate-from">
-                            <option value="ru" selected>Русский</option>
+                            <option value="ru" selected>Русский</option> <!-- выбранный русский -->
                             <option value="en">Английский</option>
                             <option value="de">Немецкий</option>
                             <option value="fr">Французский</option>
-                            <option value="zh">Китайский</option>
-                            <option value="th">Тайский</option>
                         </select>
                     </div>
                     
-                    <button class="swap-btn" onclick="TranslatesLanguages()" title="поменять языки местами">⇄</button>
+                    <button class="swap-btn" onclick="TranslatesLanguages()" title="поменять языки местами">⇄</button> <!-- onclick="TranslatesLanguages() — это вызов функции при клике -->
                     
                     <div class="form-group">
                         <select id="translate-to">
                             <option value="ru">Русский</option>
-                            <option value="en" selected>Английский</option>
+                            <option value="en" selected>Английский</option> <!-- выбрать и перевести на английский-->
                             <option value="de">Немецкий</option>
                             <option value="fr">Французский</option>
-                            <option value="zh">Китайский</option>
-                            <option value="th">Тайский</option>
                         </select>
                     </div>
                 </div>
                 
-                <div class="result-box" id="translate-result" style="font-size: 16px; word-wrap: break-word;">
+                <div class="result-box" id="translate-result" word-wrap: break-word;> 
                 </div>
             </div>
         </div>
@@ -142,40 +138,38 @@
 
         <section class="tab-content" id="tab-tips">
             <div class="form-group">
-                <label for="bill-amount">Полная цена</label>
+                <label for="bill-amount">Полная цена</label> <!-- цена -->
                 <input type="number" id="bill-amount" min="0" step="0.01" placeholder="Введите цену...">
             </div>
 
             <div class="form-group">
-            <label for="tip-percent">Скидка(в процентах)</label>
+            <label for="tip-percent">Скидка(в процентах)</label> <!-- скидка -->
                 <input type="number" id="tip-percent" min="0" max="100" step="0.01" placeholder="Введите скидку...">
             </div>
 
             <div class="form-group">
-                <label for="people-count">Количество человек</label>
+                <label for="people-count">Количество человек</label> <!-- на скольких делить счет -->
                 <input type="number" id="people-count" value="1" min="1" max="30" placeholder="Введите количество...">
             </div>
 
-            <div class="result-box multi-line" id="tips-result">
-                <span>Процент: 375 руб</span>
-                <span>Итого: 2 875 руб</span>
-                <span>Раздельный счет: 1 437.50 руб</span>
+            <div class="result-box multi-line" id="tips-result"> <!-- вывод -->
+                <span>Процент: 0 руб</span>
+                <span>Итого: 0 руб</span>
+                <span>Раздельный счет: 0 руб</span>
             </div>
 
         </section>
 
 
-
     <div class="calculator"></div>
-    <br><br><br><br><br>
-    <br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br> <!-- лень было делать нормальные отступы -->
 
-    <footer class="footer">
+    <footer class="footer"> <!-- нижний блок -->
         <div class="footer-content">
             <div class="footer-links">
-                <a href="privacy.html" class="footer-link">Политика конфиденциальности</a>
+                <a href="privacy.html" class="footer-link">Политика конфиденциальности</a> <!-- ссылка переход-->
                 <span class="footer-divider">|</span>
-                <a href="agreement.html" class="footer-link">Пользовательское соглашение</a>
+                <a href="agreement.html" class="footer-link">Пользовательское соглашение</a> <!-- переход ссылка -->
             </div>
             <div class="footer-copyright">
                 © 2026 meangrinder. Все права защищены
