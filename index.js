@@ -1,3 +1,4 @@
+/*  цифры после запятой  */ 
 function formatNumber(num, decimals = 3) {
     return num.toFixed(decimals).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
 }
@@ -54,6 +55,8 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
 });
 
 
+/*  валюты  */ 
+
 const exchangeRates = {
     RUB: 1,
     USD: 0.013,
@@ -73,6 +76,9 @@ const currencySymbols = {
     CNY: '¥',
     THB: '฿'
 };
+
+
+/*  функции конвертации валют  */ 
 
 function formatCurrency(amount, currency) {
     const symbol = currencySymbols[currency] || '';
@@ -109,9 +115,10 @@ const languageNames = {
     en: 'Английский',
     de: 'Немецкий',
     fr: 'Французский',
-    zh: 'Китайский',
-    th: 'Тайский'
 };
+
+
+/*  переводы для переводчика  */ 
 
 const quickPhrases = {
     'привет': { en: 'hello', de: 'hallo', fr: 'bonjour'},
@@ -175,6 +182,9 @@ const quickPhrases = {
     'находится': { en: 'nearby', de: 'in der Nähe', fr: 'à proximité'},
 }
 
+
+/*  функции переводчика  */
+
 function translateText() {
     const text = document.getElementById('translate-text').value.toLowerCase().trim();
     const fromLang = document.getElementById('translate-from').value;
@@ -204,10 +214,11 @@ function translateText() {
         }
     }
     
-    if (translated === text && fromLang === 'ru' && text.includes(' ')) {
+
+    if (translated === text && fromLang === 'ru' && text.includes(' ')) { 
         const words = text.split(' ');
         translated = words.map(word => {
-            const cleanWord = word.replace(/[?,!]/g, '');
+            const cleanWord = word.replace(/[?,!,.]/g, '');
             if (quickPhrases[cleanWord]) {
                 return quickPhrases[cleanWord][toLang] || word;
             }
@@ -225,6 +236,8 @@ function TranslatesLanguages() {
     translateText();
 }
 
+
+/*  функции подсчета шкал  */
 
 function convertTemperature() {
     const tempInput = document.getElementById('temp-value');
@@ -257,6 +270,8 @@ function swapTemperature() {
 }
 
 
+/*  функция подсчета суммы поездки */
+
 function calculateTips() {
     const billInput = document.getElementById('bill-amount');
     const tipPercent = document.getElementById('tip-percent').value;
@@ -279,6 +294,7 @@ function calculateTips() {
 }
 
 
+/*  функции  */
 
 document.getElementById('text').addEventListener('input', convertCurrency);
 document.getElementById('from-currency').addEventListener('change', convertCurrency);
@@ -298,6 +314,8 @@ document.getElementById('bill-amount').addEventListener('input', calculateTips);
 document.getElementById('tip-percent').addEventListener('change', calculateTips);
 document.getElementById('people-count').addEventListener('input', calculateTips);
 
+
+/*  вызовы функций  */
 
 convertCurrency();
 translateText();
